@@ -53,8 +53,9 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
-          cd /root/home/realworld-nuxtjs
-          wget https://github.com/yict/realworld/releases/latest/download/release.tgz
-          tar zxvf release.tgz
-          npm install --production
-          pm2 reload pm2.config.json
+          cd /root/home/realworld
+          touch test.js
+          # wget https://github.com/yict/realworld/releases/latest/download/release.tgz
+          # tar zxvf release.tgz
+          # npm install --production
+          # pm2 reload pm2.config.json
